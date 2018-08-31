@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="Workspace" id="{e269a88e-09c5-4c3c-bbf3-3d70f674569f}">
+        <property name="builtBanksOutputDirectory">
+            <value>../../GMTK-Jam/GMTK Jam/Assets/Audio</value>
+        </property>
+        <relationship name="masterEventFolder">
+            <destination>{e0d61d35-6b8d-4918-906e-7eaf534bfb76}</destination>
+        </relationship>
+        <relationship name="masterTagFolder">
+            <destination>{c8abccaf-1c02-423f-a2bf-283b0eee4ce5}</destination>
+        </relationship>
+        <relationship name="masterEffectPresetFolder">
+            <destination>{5407430f-0b48-46a0-8908-e5749f29aaf2}</destination>
+        </relationship>
+        <relationship name="masterParameterPresetFolder">
+            <destination>{b9632882-aff2-4685-ac7e-15ae13fb8fb9}</destination>
+        </relationship>
+        <relationship name="masterBankFolder">
+            <destination>{1d2766fd-e287-480f-b35f-a3eb5a98985c}</destination>
+        </relationship>
+        <relationship name="masterAssetFolder">
+            <destination>{aa44b317-1909-4a99-94e7-0afeeb3ea2da}</destination>
+        </relationship>
+        <relationship name="mixer">
+            <destination>{63f22b6e-dca6-41e2-b769-cef31bab2cf9}</destination>
+        </relationship>
+        <relationship name="platforms">
+            <destination>{1b2c1265-54bb-4e0b-90d1-7ce77cf33fb5}</destination>
+        </relationship>
+    </object>
+</objects>
