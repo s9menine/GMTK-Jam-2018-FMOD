@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{f3fd0c36-496b-4b54-85bb-67fee1ece042}">
+        <property name="name">
+            <value>Timeslow</value>
+        </property>
+        <relationship name="folder">
+            <destination>{b9632882-aff2-4685-ac7e-15ae13fb8fb9}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{764b1714-f302-4efd-a5a9-4844a1437ee5}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{764b1714-f302-4efd-a5a9-4844a1437ee5}">
+        <property name="initialValue">
+            <value>1</value>
+        </property>
+    </object>
+</objects>

@@ -2,7 +2,10 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="Event" id="{930bb823-fb15-4fa6-aaa1-7ddb31aa13ff}">
         <property name="name">
-            <value>Bullet_collect</value>
+            <value>Ammo_collect</value>
+        </property>
+        <property name="note">
+            <value>why does it trigger another sound when parameter crosses a 25% threshold while one sound is triggered why please how</value>
         </property>
         <property name="outputFormat">
             <value>1</value>
@@ -144,6 +147,9 @@
         <relationship name="automators">
             <destination>{891ba724-13c5-43cf-84d5-52350b89e508}</destination>
         </relationship>
+        <relationship name="modulators">
+            <destination>{a5f85d06-25bb-4ca7-aab4-5923c80eb27f}</destination>
+        </relationship>
         <relationship name="sounds">
             <destination>{39135898-4a15-4136-838c-8b5623389dd6}</destination>
             <destination>{f6f2b9bc-508a-4267-9e04-99e40676331c}</destination>
@@ -163,6 +169,9 @@
         </property>
         <relationship name="automators">
             <destination>{780c9941-1aa0-4984-aed4-b9d23fedc776}</destination>
+        </relationship>
+        <relationship name="modulators">
+            <destination>{0df5baa7-3786-44d1-bc1b-72f7e26c7be2}</destination>
         </relationship>
         <relationship name="sounds">
             <destination>{ab46c0b7-5547-479e-908e-1a203359a7ca}</destination>
@@ -184,6 +193,9 @@
         <relationship name="automators">
             <destination>{c87faeb2-eb5a-4299-b723-3d10f8472f0e}</destination>
         </relationship>
+        <relationship name="modulators">
+            <destination>{e8306055-bcf4-44ce-9e7d-ab06182008a1}</destination>
+        </relationship>
         <relationship name="sounds">
             <destination>{3a1f8544-4dd4-4a9d-8b11-7fb420b480dd}</destination>
             <destination>{4317c3b6-d4be-456b-9573-0d02691635c8}</destination>
@@ -203,6 +215,9 @@
         </property>
         <relationship name="automators">
             <destination>{733a64e5-0182-40a5-b92f-ce947fc05917}</destination>
+        </relationship>
+        <relationship name="modulators">
+            <destination>{e748f455-c9d7-4707-9d8b-8640bcee0aaa}</destination>
         </relationship>
         <relationship name="sounds">
             <destination>{7256c43e-1efd-490a-8d08-3a0173ce3808}</destination>
@@ -240,6 +255,14 @@
             <destination>{6b82dbb5-960d-4641-92a9-9b999ac337ba}</destination>
         </relationship>
     </object>
+    <object class="RandomizerModulator" id="{a5f85d06-25bb-4ca7-aab4-5923c80eb27f}">
+        <property name="nameOfPropertyBeingModulated">
+            <value>volume</value>
+        </property>
+        <property name="amount">
+            <value>4</value>
+        </property>
+    </object>
     <object class="SingleSound" id="{39135898-4a15-4136-838c-8b5623389dd6}">
         <relationship name="audioFile">
             <destination>{26435b36-95ec-4d27-8bc7-6bd5da76f001}</destination>
@@ -267,6 +290,14 @@
         <relationship name="automationCurves">
             <destination>{0abd1e36-f0bb-4f82-b261-b52c876f2481}</destination>
         </relationship>
+    </object>
+    <object class="RandomizerModulator" id="{0df5baa7-3786-44d1-bc1b-72f7e26c7be2}">
+        <property name="nameOfPropertyBeingModulated">
+            <value>volume</value>
+        </property>
+        <property name="amount">
+            <value>4</value>
+        </property>
     </object>
     <object class="SingleSound" id="{ab46c0b7-5547-479e-908e-1a203359a7ca}">
         <relationship name="audioFile">
@@ -296,6 +327,14 @@
             <destination>{e90033a9-b781-475d-824e-3d696e02a320}</destination>
         </relationship>
     </object>
+    <object class="RandomizerModulator" id="{e8306055-bcf4-44ce-9e7d-ab06182008a1}">
+        <property name="nameOfPropertyBeingModulated">
+            <value>volume</value>
+        </property>
+        <property name="amount">
+            <value>4</value>
+        </property>
+    </object>
     <object class="SingleSound" id="{3a1f8544-4dd4-4a9d-8b11-7fb420b480dd}">
         <relationship name="audioFile">
             <destination>{bf47c60a-0b4a-4234-b47a-38736f2b5250}</destination>
@@ -323,6 +362,14 @@
         <relationship name="automationCurves">
             <destination>{32316914-ec1e-4c5d-bed5-293e3da11262}</destination>
         </relationship>
+    </object>
+    <object class="RandomizerModulator" id="{e748f455-c9d7-4707-9d8b-8640bcee0aaa}">
+        <property name="nameOfPropertyBeingModulated">
+            <value>volume</value>
+        </property>
+        <property name="amount">
+            <value>4</value>
+        </property>
     </object>
     <object class="SingleSound" id="{7256c43e-1efd-490a-8d08-3a0173ce3808}">
         <relationship name="audioFile">

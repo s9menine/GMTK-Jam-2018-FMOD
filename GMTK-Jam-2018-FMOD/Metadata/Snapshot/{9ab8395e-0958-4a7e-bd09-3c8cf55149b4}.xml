@@ -4,9 +4,6 @@
         <property name="name">
             <value>Snapshot_timeslow</value>
         </property>
-        <property name="behavior">
-            <value>1</value>
-        </property>
         <relationship name="mixer">
             <destination>{63f22b6e-dca6-41e2-b769-cef31bab2cf9}</destination>
         </relationship>
@@ -24,6 +21,12 @@
         </relationship>
         <relationship name="snapshotProperties">
             <destination>{28dd759b-c1e9-46f5-b14d-65fd0087fdd6}</destination>
+            <destination>{7394c82f-7a50-441c-a217-c5ef39592c53}</destination>
+            <destination>{a4c93afa-43b7-497e-a582-47ab67b646c6}</destination>
+            <destination>{abb84e53-4e54-4986-805d-98d6bb3bcceb}</destination>
+            <destination>{fc93dbb4-ffce-4f23-892c-297fc3cf5647}</destination>
+            <destination>{06f1ec97-4b72-474f-8722-b28279cd2f00}</destination>
+            <destination>{195e4a97-b9d1-4b3e-bc6c-c3d9c9c78f76}</destination>
         </relationship>
         <relationship name="snapshotTracks">
             <destination>{86a6c18f-1088-4cf5-8d98-888757064017}</destination>
@@ -38,7 +41,73 @@
             <value>frequencyA</value>
         </property>
         <property name="value">
-            <value>1700</value>
+            <value>1650.62024</value>
+        </property>
+        <relationship name="automatableObject">
+            <destination>{e49791e5-adfd-4518-906c-7c541a8ea26a}</destination>
+        </relationship>
+    </object>
+    <object class="SnapshotProperty" id="{7394c82f-7a50-441c-a217-c5ef39592c53}">
+        <property name="propertyName">
+            <value>volume</value>
+        </property>
+        <property name="value">
+            <value>-3</value>
+        </property>
+        <relationship name="automatableObject">
+            <destination>{9f1bfa39-b07b-4c4a-aad1-97f11a29c794}</destination>
+        </relationship>
+    </object>
+    <object class="SnapshotProperty" id="{a4c93afa-43b7-497e-a582-47ab67b646c6}">
+        <property name="propertyName">
+            <value>qualityA</value>
+        </property>
+        <property name="value">
+            <value>0.602344871</value>
+        </property>
+        <relationship name="automatableObject">
+            <destination>{e49791e5-adfd-4518-906c-7c541a8ea26a}</destination>
+        </relationship>
+    </object>
+    <object class="SnapshotProperty" id="{abb84e53-4e54-4986-805d-98d6bb3bcceb}">
+        <property name="propertyName">
+            <value>gainA</value>
+        </property>
+        <property name="value">
+            <value>0</value>
+        </property>
+        <relationship name="automatableObject">
+            <destination>{e49791e5-adfd-4518-906c-7c541a8ea26a}</destination>
+        </relationship>
+    </object>
+    <object class="SnapshotProperty" id="{fc93dbb4-ffce-4f23-892c-297fc3cf5647}">
+        <property name="propertyName">
+            <value>frequencyB</value>
+        </property>
+        <property name="value">
+            <value>78.5075455</value>
+        </property>
+        <relationship name="automatableObject">
+            <destination>{e49791e5-adfd-4518-906c-7c541a8ea26a}</destination>
+        </relationship>
+    </object>
+    <object class="SnapshotProperty" id="{06f1ec97-4b72-474f-8722-b28279cd2f00}">
+        <property name="propertyName">
+            <value>qualityB</value>
+        </property>
+        <property name="value">
+            <value>0.707000017</value>
+        </property>
+        <relationship name="automatableObject">
+            <destination>{e49791e5-adfd-4518-906c-7c541a8ea26a}</destination>
+        </relationship>
+    </object>
+    <object class="SnapshotProperty" id="{195e4a97-b9d1-4b3e-bc6c-c3d9c9c78f76}">
+        <property name="propertyName">
+            <value>gainB</value>
+        </property>
+        <property name="value">
+            <value>-6.20689583</value>
         </property>
         <relationship name="automatableObject">
             <destination>{e49791e5-adfd-4518-906c-7c541a8ea26a}</destination>

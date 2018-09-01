@@ -4,6 +4,9 @@
         <property name="name">
             <value>Weapon_charge_up</value>
         </property>
+        <property name="note">
+            <value>Starting note is C but since it slides and detunes into something harmonic it hardly matters</value>
+        </property>
         <property name="outputFormat">
             <value>1</value>
         </property>
@@ -56,7 +59,17 @@
             <destination>{3690c080-c207-436f-97d5-816252aeaafc}</destination>
         </relationship>
     </object>
-    <object class="EventAutomatableProperties" id="{16602518-737b-41c7-8d67-900fa2d422cc}"/>
+    <object class="EventAutomatableProperties" id="{16602518-737b-41c7-8d67-900fa2d422cc}">
+        <property name="maxVoices">
+            <value>2</value>
+        </property>
+        <property name="priority">
+            <value>3</value>
+        </property>
+        <property name="triggerCooldown">
+            <value>100</value>
+        </property>
+    </object>
     <object class="MarkerTrack" id="{b68bd9e3-f734-405b-87fd-4cd5044f5974}"/>
     <object class="GroupTrack" id="{9f75e8d8-4e61-4da5-bb75-8b149e55861e}">
         <relationship name="modules">
