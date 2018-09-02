@@ -22,14 +22,50 @@
     </object>
     <object class="MixerBusEffectChain" id="{72b77c40-2555-4074-89b1-f871bd6a4942}">
         <relationship name="effects">
+            <destination>{d2d02979-4a86-46d4-a92f-f51ce21f75f6}</destination>
             <destination>{423062d9-5b68-4909-93f7-45e347d2795c}</destination>
             <destination>{91625f52-293b-4fda-bc8f-1aa14f674c8c}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{46ede83a-fc32-4ffe-897c-c7ad524d912a}"/>
+    <object class="MultibandEqEffect" id="{d2d02979-4a86-46d4-a92f-f51ce21f75f6}">
+        <property name="frequencyA">
+            <value>6614.95264</value>
+        </property>
+        <property name="qualityA">
+            <value>0.393034458</value>
+        </property>
+    </object>
     <object class="SFXReverbEffect" id="{423062d9-5b68-4909-93f7-45e347d2795c}">
+        <property name="decayTime">
+            <value>3400</value>
+        </property>
+        <property name="earlyDelay">
+            <value>32</value>
+        </property>
+        <property name="lateDelay">
+            <value>38</value>
+        </property>
+        <property name="HFReference">
+            <value>3600</value>
+        </property>
+        <property name="HFDecayRatio">
+            <value>86</value>
+        </property>
+        <property name="density">
+            <value>78</value>
+        </property>
+        <property name="lowShelfFrequency">
+            <value>410</value>
+        </property>
+        <property name="lowShelfGain">
+            <value>-20</value>
+        </property>
+        <property name="highCut">
+            <value>9000</value>
+        </property>
         <property name="wetLevel">
-            <value>0</value>
+            <value>-9</value>
         </property>
         <property name="dryLevel">
             <value>-80</value>

@@ -2,9 +2,8 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="Event" id="{e2ab89ae-55f7-40ca-9452-6c09dbc694b5}">
         <property name="name">
-            <value>Enemy_damaged_small</value>
+            <value>Enemy_small_damaged</value>
         </property>
-        <property name="note"/>
         <property name="outputFormat">
             <value>1</value>
         </property>
@@ -117,6 +116,9 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{96c84146-9c3b-428f-a3b1-ba92909e18f7}">
+        <property name="volume">
+            <value>2</value>
+        </property>
         <property name="name">
             <value>Audio 1</value>
         </property>

@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="Event" id="{b975f9a3-fde6-4289-901e-cfc55fda7ac8}">
         <property name="name">
-            <value>Timeslow</value>
+            <value>Timeslow_bak</value>
         </property>
         <property name="note">
             <value>Starting and ending note is C
@@ -48,9 +48,6 @@ Bassdrop set to Async and added volume envelope in case early exit</value>
         <relationship name="parameters">
             <destination>{c4183edf-0a4f-4086-82b4-5177ea0f97af}</destination>
         </relationship>
-        <relationship name="banks">
-            <destination>{a98d2b15-9d72-4728-a3f2-2e2e1e808792}</destination>
-        </relationship>
     </object>
     <object class="EventMixer" id="{3ae4a4b3-b631-4246-b14d-1e5b42509ec2}">
         <relationship name="masterBus">
@@ -76,6 +73,9 @@ Bassdrop set to Async and added volume envelope in case early exit</value>
     <object class="EventAutomatableProperties" id="{0833a7ba-ca20-4186-baef-546e757567b3}">
         <property name="priority">
             <value>4</value>
+        </property>
+        <property name="triggerCooldown">
+            <value>1000</value>
         </property>
     </object>
     <object class="MarkerTrack" id="{c16189a3-8e4f-4990-9336-00fb97dc437c}"/>

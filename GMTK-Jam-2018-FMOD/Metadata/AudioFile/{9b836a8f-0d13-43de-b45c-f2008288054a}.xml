@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{9b836a8f-0d13-43de-b45c-f2008288054a}">
+        <property name="assetPath">
+            <value>player_weapon_fire_impact-004.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>0.64060416666666664</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{aa44b317-1909-4a99-94e7-0afeeb3ea2da}</destination>
+        </relationship>
+    </object>
+</objects>

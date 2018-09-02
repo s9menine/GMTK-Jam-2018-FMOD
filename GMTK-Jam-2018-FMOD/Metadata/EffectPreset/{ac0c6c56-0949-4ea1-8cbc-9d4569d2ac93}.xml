@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="EffectPreset" id="{ac0c6c56-0949-4ea1-8cbc-9d4569d2ac93}">
+        <property name="name">
+            <value>Force Fadeout 700ms</value>
+        </property>
+        <relationship name="folder">
+            <destination>{5407430f-0b48-46a0-8908-e5749f29aaf2}</destination>
+        </relationship>
+        <relationship name="effect">
+            <destination>{920b50e9-1d24-4d65-941f-4b3af26af82d}</destination>
+        </relationship>
+    </object>
+    <object class="GainEffect" id="{920b50e9-1d24-4d65-941f-4b3af26af82d}">
+        <relationship name="modulators">
+            <destination>{096adab1-fcf5-4045-970c-78d64c87048c}</destination>
+        </relationship>
+    </object>
+    <object class="ADSRModulator" id="{096adab1-fcf5-4045-970c-78d64c87048c}">
+        <property name="nameOfPropertyBeingModulated">
+            <value>gain</value>
+        </property>
+        <property name="initialValue">
+            <value>-80</value>
+        </property>
+        <property name="attackTime">
+            <value>0</value>
+        </property>
+        <property name="releaseTime">
+            <value>700</value>
+        </property>
+    </object>
+</objects>
