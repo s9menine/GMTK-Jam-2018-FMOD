@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{36f2dcf3-01bc-444b-afe3-eac669c1800a}">
+        <property name="assetPath">
+            <value>ammo_collect-009.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>0.46145833333333336</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{aa44b317-1909-4a99-94e7-0afeeb3ea2da}</destination>
+        </relationship>
+    </object>
+</objects>

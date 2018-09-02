@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="Event" id="{de4e0c1b-f5d1-485c-9838-4c924ec45654}">
         <property name="name">
-            <value>Health_death</value>
+            <value>Enemy_death_small</value>
         </property>
         <property name="note"/>
         <property name="outputFormat">
@@ -34,6 +34,9 @@
         </relationship>
         <relationship name="tags">
             <destination>{09113413-251f-438a-9f71-3cdb1f619e9a}</destination>
+        </relationship>
+        <relationship name="banks">
+            <destination>{a98d2b15-9d72-4728-a3f2-2e2e1e808792}</destination>
         </relationship>
     </object>
     <object class="EventMixer" id="{2350fbd1-dc22-4202-955b-85eb6bb73e03}">
@@ -106,6 +109,7 @@
     <object class="MixerBusEffectChain" id="{ad53b6c3-5076-45c3-a4f4-7841f95fdddb}">
         <relationship name="effects">
             <destination>{8d8dfece-0830-4266-a7e5-4eea6a872117}</destination>
+            <destination>{f92ec359-321f-4048-a78d-88dca9af3257}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{e246bcf3-b08b-4149-9b7a-aa9cde25fc32}"/>
@@ -117,5 +121,13 @@
     </object>
     <object class="MixerBusPanner" id="{8c26452b-382c-47bb-8ebd-fa8ebe21a290}"/>
     <object class="MixerBusFader" id="{8d8dfece-0830-4266-a7e5-4eea6a872117}"/>
+    <object class="ProxyEffect" id="{f92ec359-321f-4048-a78d-88dca9af3257}">
+        <property name="inputFormat">
+            <value>0</value>
+        </property>
+        <relationship name="preset">
+            <destination>{9f3b61b5-efbd-4a6f-b829-ce79c4542636}</destination>
+        </relationship>
+    </object>
     <object class="MixerBusFader" id="{b4054072-9ff6-4c03-9e3c-d3998d50f63d}"/>
 </objects>

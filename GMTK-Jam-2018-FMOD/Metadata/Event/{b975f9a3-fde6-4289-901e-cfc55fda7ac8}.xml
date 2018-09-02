@@ -9,10 +9,12 @@
 
 Snapshot muffles music via LPF
 
-Set parameter Timeslow = 1 when calling event
+Set parameter Timeslow = 1 when calling event,
 then set parameter Timeslow = 0 before stopping event to gradually undo snapshot
 
-I don't know if it's the right way to use snapshots but eh</value>
+I don't know if it's the right way to use snapshots but eh
+
+Bassdrop set to Async and added volume envelope in case early exit</value>
         </property>
         <property name="outputFormat">
             <value>1</value>
@@ -80,7 +82,7 @@ I don't know if it's the right way to use snapshots but eh</value>
     <object class="MarkerTrack" id="{a4155538-9a37-47af-85d1-45160377ebe9}"/>
     <object class="GroupTrack" id="{707920b5-a8fb-478d-936d-632c63b69b29}">
         <relationship name="modules">
-            <destination>{0921e99c-aeea-45ba-b3d9-f982819518fb}</destination>
+            <destination>{1c729a53-c3f9-45ce-91c5-954296c1e6a0}</destination>
         </relationship>
         <relationship name="mixerGroup">
             <destination>{40af87b8-4b57-432e-8333-dfed998a6b17}</destination>
@@ -99,8 +101,8 @@ I don't know if it's the right way to use snapshots but eh</value>
     </object>
     <object class="Timeline" id="{bac00e33-5a5f-4a51-bde6-f637f1d629f4}">
         <relationship name="modules">
-            <destination>{0921e99c-aeea-45ba-b3d9-f982819518fb}</destination>
             <destination>{4867cab1-d1e7-4ed9-a5fb-44ab78340b19}</destination>
+            <destination>{1c729a53-c3f9-45ce-91c5-954296c1e6a0}</destination>
         </relationship>
         <relationship name="markers">
             <destination>{f656e77a-330e-4e31-9b01-e2c393d8003f}</destination>
@@ -131,18 +133,22 @@ I don't know if it's the right way to use snapshots but eh</value>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{597346a9-8ec9-47fe-b623-8d432198d5cc}"/>
-    <object class="SingleSound" id="{0921e99c-aeea-45ba-b3d9-f982819518fb}">
+    <object class="MultiSound" id="{1c729a53-c3f9-45ce-91c5-954296c1e6a0}">
         <property name="isAsync">
             <value>true</value>
         </property>
         <property name="length">
-            <value>1.875</value>
+            <value>2.5</value>
         </property>
         <relationship name="modulators">
-            <destination>{94f488e2-5049-434a-b2cf-95317361377d}</destination>
+            <destination>{0cd1f496-b001-44a8-bf7a-03de0a82b5ba}</destination>
+            <destination>{898b28d2-380e-4e8d-8de2-8d57dd02a1b3}</destination>
         </relationship>
-        <relationship name="audioFile">
-            <destination>{c8aea283-fbee-470a-a713-c7b8a1faa48f}</destination>
+        <relationship name="sounds">
+            <destination>{97b719a2-bb07-481b-a7a7-50fec54f5bd7}</destination>
+            <destination>{3705adcb-5d5e-4f0b-bc84-7c362df4383b}</destination>
+            <destination>{c749ae5d-5b24-4f03-bb62-d678d4459e41}</destination>
+            <destination>{d7dc19f3-e996-40ea-97b2-22fabe1552b0}</destination>
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{40af87b8-4b57-432e-8333-dfed998a6b17}">
@@ -166,7 +172,7 @@ I don't know if it's the right way to use snapshots but eh</value>
     </object>
     <object class="SnapshotModule" id="{4867cab1-d1e7-4ed9-a5fb-44ab78340b19}">
         <property name="length">
-            <value>2.7000000000000002</value>
+            <value>3.75</value>
         </property>
         <relationship name="automators">
             <destination>{fee14a09-5b12-41a4-8f0f-123c867eb1b5}</destination>
@@ -191,7 +197,7 @@ I don't know if it's the right way to use snapshots but eh</value>
     </object>
     <object class="NamedMarker" id="{f656e77a-330e-4e31-9b01-e2c393d8003f}">
         <property name="position">
-            <value>2.026054385510339</value>
+            <value>3</value>
         </property>
         <property name="name">
             <value>Exit</value>
@@ -222,7 +228,7 @@ I don't know if it's the right way to use snapshots but eh</value>
             <value>0</value>
         </property>
         <property name="length">
-            <value>2</value>
+            <value>2.9500000000000002</value>
         </property>
         <relationship name="triggerConditions">
             <destination>{269bfb72-9c5a-4c26-b9bd-bd9de5003f8c}</destination>
@@ -239,10 +245,10 @@ I don't know if it's the right way to use snapshots but eh</value>
     </object>
     <object class="LoopRegion" id="{27f8d2f2-c9df-4d09-acc5-ed672655bd81}">
         <property name="position">
-            <value>1.9000000000000001</value>
+            <value>2.5500000000000003</value>
         </property>
         <property name="length">
-            <value>0.075000000000000233</value>
+            <value>0.29999999999999988</value>
         </property>
         <relationship name="timeline">
             <destination>{bac00e33-5a5f-4a51-bde6-f637f1d629f4}</destination>
@@ -254,11 +260,12 @@ I don't know if it's the right way to use snapshots but eh</value>
     <object class="MixerBusEffectChain" id="{ffaa3ed7-2115-4c96-85d1-7b42559f3deb}">
         <relationship name="effects">
             <destination>{a1e4b9de-cfbd-449f-bf69-c694587fcfff}</destination>
+            <destination>{f49bf86d-9efd-4d48-ae51-4f9e4fb4f30b}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{24002779-9fe4-49a0-9f49-ef0f81646006}"/>
     <object class="MixerBusFader" id="{867f5772-bbf5-455e-a616-9d00a2b8a681}"/>
-    <object class="ADSRModulator" id="{94f488e2-5049-434a-b2cf-95317361377d}">
+    <object class="ADSRModulator" id="{0cd1f496-b001-44a8-bf7a-03de0a82b5ba}">
         <property name="nameOfPropertyBeingModulated">
             <value>volume</value>
         </property>
@@ -269,8 +276,36 @@ I don't know if it's the right way to use snapshots but eh</value>
             <value>0</value>
         </property>
         <property name="releaseTime">
-            <value>780</value>
+            <value>600</value>
         </property>
+    </object>
+    <object class="RandomizerModulator" id="{898b28d2-380e-4e8d-8de2-8d57dd02a1b3}">
+        <property name="nameOfPropertyBeingModulated">
+            <value>pitch</value>
+        </property>
+        <property name="amount">
+            <value>6.25</value>
+        </property>
+    </object>
+    <object class="SingleSound" id="{97b719a2-bb07-481b-a7a7-50fec54f5bd7}">
+        <relationship name="audioFile">
+            <destination>{979db068-3113-4739-848d-4492fa5dd72a}</destination>
+        </relationship>
+    </object>
+    <object class="SingleSound" id="{3705adcb-5d5e-4f0b-bc84-7c362df4383b}">
+        <relationship name="audioFile">
+            <destination>{b77c534a-ca04-4cc7-bd24-6ade7ac59e0a}</destination>
+        </relationship>
+    </object>
+    <object class="SingleSound" id="{c749ae5d-5b24-4f03-bb62-d678d4459e41}">
+        <relationship name="audioFile">
+            <destination>{69b15192-c573-4bc6-8afd-5d9eb65b95d2}</destination>
+        </relationship>
+    </object>
+    <object class="SingleSound" id="{d7dc19f3-e996-40ea-97b2-22fabe1552b0}">
+        <relationship name="audioFile">
+            <destination>{d248e036-c608-4533-810b-01d82b102be2}</destination>
+        </relationship>
     </object>
     <object class="MixerBusEffectChain" id="{d15374ec-e515-482f-b1ff-9864ebde35e9}">
         <relationship name="effects">
@@ -304,6 +339,14 @@ I don't know if it's the right way to use snapshots but eh</value>
         </relationship>
     </object>
     <object class="MixerBusFader" id="{a1e4b9de-cfbd-449f-bf69-c694587fcfff}"/>
+    <object class="ProxyEffect" id="{f49bf86d-9efd-4d48-ae51-4f9e4fb4f30b}">
+        <property name="inputFormat">
+            <value>1</value>
+        </property>
+        <relationship name="preset">
+            <destination>{9f3b61b5-efbd-4a6f-b829-ce79c4542636}</destination>
+        </relationship>
+    </object>
     <object class="MixerBusFader" id="{a350ffeb-147e-4815-a6c8-1bee9aa6c4d1}"/>
     <object class="AutomationCurve" id="{ddd74e90-5c3a-4d39-a2cb-221a1a9c72b4}">
         <relationship name="parameter">
@@ -338,7 +381,7 @@ I don't know if it's the right way to use snapshots but eh</value>
     </object>
     <object class="AutomationPoint" id="{1287b44c-dd9c-42ef-9824-512cfc811dd3}">
         <property name="position">
-            <value>2.0485585850734132</value>
+            <value>3.0009289554437837</value>
         </property>
         <property name="value">
             <value>100</value>
@@ -349,7 +392,7 @@ I don't know if it's the right way to use snapshots but eh</value>
     </object>
     <object class="AutomationPoint" id="{afa28fca-5a84-4e70-b39e-b5a2200f0efc}">
         <property name="position">
-            <value>2.6564145226845497</value>
+            <value>3.6087848930549202</value>
         </property>
         <property name="value">
             <value>0</value>

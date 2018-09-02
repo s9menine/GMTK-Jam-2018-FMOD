@@ -102,12 +102,12 @@
     </object>
     <object class="MixerBusPanner" id="{c683eedf-8613-4380-a55f-59ec27e9e900}"/>
     <object class="MultiSound" id="{2d5f8419-c525-4e7e-834d-dbaab51ae1bc}">
-        <property name="isAsync">
-            <value>true</value>
-        </property>
         <property name="length">
             <value>3.7519954648526079</value>
         </property>
+        <relationship name="modulators">
+            <destination>{6ea62fd1-5392-4b04-b517-d37a05f2a25d}</destination>
+        </relationship>
         <relationship name="sounds">
             <destination>{a2efdcb4-1b44-4267-8593-165d6b3b35ea}</destination>
             <destination>{da06731a-c27e-4fb9-a8c8-f0e667f3b9a8}</destination>
@@ -132,10 +132,25 @@
     <object class="MixerBusEffectChain" id="{cbfcf835-7f0a-4b7b-99ae-1865f007b8a6}">
         <relationship name="effects">
             <destination>{20e35f00-93ce-4ea5-8d91-7194ad276014}</destination>
+            <destination>{1defbb28-6ca1-49cd-94a1-a11e9f425573}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{96c07b9f-b173-4df7-9eea-aa18690f174f}"/>
     <object class="MixerBusFader" id="{d0f3d56d-3143-43c5-9ef4-ae040441ab68}"/>
+    <object class="ADSRModulator" id="{6ea62fd1-5392-4b04-b517-d37a05f2a25d}">
+        <property name="nameOfPropertyBeingModulated">
+            <value>volume</value>
+        </property>
+        <property name="initialValue">
+            <value>-80</value>
+        </property>
+        <property name="attackTime">
+            <value>0</value>
+        </property>
+        <property name="releaseTime">
+            <value>600</value>
+        </property>
+    </object>
     <object class="SingleSound" id="{a2efdcb4-1b44-4267-8593-165d6b3b35ea}">
         <relationship name="audioFile">
             <destination>{7e94b172-1154-40c7-9a6c-d5c23b451706}</destination>
@@ -163,5 +178,13 @@
     </object>
     <object class="MixerBusPanner" id="{9e9bb67e-3288-43fd-b49e-ba50d3a317ed}"/>
     <object class="MixerBusFader" id="{20e35f00-93ce-4ea5-8d91-7194ad276014}"/>
+    <object class="ProxyEffect" id="{1defbb28-6ca1-49cd-94a1-a11e9f425573}">
+        <property name="inputFormat">
+            <value>1</value>
+        </property>
+        <relationship name="preset">
+            <destination>{9f3b61b5-efbd-4a6f-b829-ce79c4542636}</destination>
+        </relationship>
+    </object>
     <object class="MixerBusFader" id="{ff431cbd-ca57-4a71-b405-540f988c82bd}"/>
 </objects>
